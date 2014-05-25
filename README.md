@@ -9,6 +9,7 @@ Source of original data: https://d396qusza40orc.cloudfront.net/getdata%2Fproject
 3. Run source("run_analysis.R"), it will read eight files in "UCI HAR Dataset" directory and its "train" and "test" subdirectory and write one tidy data set.
 
 Input datasets:
+
 train/X_train.txt with test/X_test.txt -- contain 561 variables that represent 561 features
 
 train/y_train.txt with test/y_test.txt -- contain activity IDs.
@@ -20,6 +21,7 @@ features.txt -- contains 561 features
 activity_labels.txt -- contains 6 activity IDs and names 
 
 Output dataset: 
+
 tids.txt - contains the average of mean and standard deviation variables for each activity and each subject. 
 
 
