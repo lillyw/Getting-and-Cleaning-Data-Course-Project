@@ -22,13 +22,19 @@ activity_labels.txt -- contains 6 activity IDs and names (1-WALKING, 2-WALKING_U
 
 
 2. Combine three datasets (x, y, subject) together for both train and test, merge them with features and activity_labels
-to get descriptive names for all the variables in the combined datasets
+to get descriptive names for all the variables in the combined datasets. The results are 7352 X 564 data frame for train
+set and 2947 X 564 data frame for test.
 
-3. Merge two combined datasets (train and test) to create one dataset
+3. Merge two combined datasets (train and test) to create one dataset with 10299 observations and 564 variables.
 
-4. Extracts only the measurements on the mean and standard deviation for each measurement in the merged dataset
+4. Extracts only the measurements on the mean and standard deviation for each measurement in the merged dataset. The 
+result is a 10299 X 69 data frame, the 1st column contain subject IDs that range from 1 to 30, the 2nd column contain 
+activity IDs that range from 1 to 6, the 3rd column contains activity names (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS,
+SITTING, STANDING, LAYING), and the rest 66 columns are the measurements on the mean and standard deviation for each
+measurement. 
 
-5. Melt the extracted merged dataset by subject and activity and cast it back to the tidy_data format with function of mean;
-the output dataset is an independent tidy data set with the average of each variable for each activity and each subject.
+5. Melt the extracted merged dataset by subject and activity and cast it back to the tidy_data format with function of 
+mean; the output dataset is an independent tidy data set of 40 X 69 data frame with the average of each variable for each 
+activity and each subject.
 
-6. Export the independent tidy dataset to a text file.
+6. Export the independent tidy dataset to a text file named tidyds.txt.
