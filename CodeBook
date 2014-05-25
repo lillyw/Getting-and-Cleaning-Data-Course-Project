@@ -1,17 +1,25 @@
 Source of the original data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 Full description of original data: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-Unzip the data into a directory called "mydir"
+Unzip the data to your local computer, it will create a directory called "UCI HAR Dataset". Set it as working directory in R 
 
 The attached R script (run_analysis.R) performs the following to clean up the data:
 
 1. Read in eight files: 
 
-train/X_train.txt with test/X_test.txt -- contain 561 variables that represent 561 features 
-train/y_train.txt with test/y_test.txt -- contain activity IDs
-train/subject_train.txt with test/subject_test.txt -- contain subject IDs
-features.txt -- contains 561 features 
-activity_labels.txt -- contains activity IDs and names
+train/X_train.txt with test/X_test.txt -- contain 561 variables that represent 561 features; there are 7352 observations for 
+                                          train setvand 2947 for test set.
+                                          
+train/y_train.txt with test/y_test.txt -- contain activity IDs for each observations in train and test datasets.
+
+train/subject_train.txt with test/subject_test.txt -- contain subject IDs; there are 21 subjects in train set and 9 subjects
+                                          in test set.
+                                          
+features.txt -- contains 561 features, of which 33 are the measurements on the mean and 33 on the standard deviation.
+
+activity_labels.txt -- contains 6 activity IDs and names (1-WALKING, 2-WALKING_UPSTAIRS, 3-WALKING_DOWNSTAIRS,
+                                                          4-SITTING, 5-STANDING, 6-LAYING)
+
 
 2. Combine three datasets (x, y, subject) together for both train and test, merge them with features and activity_labels
 to get descriptive names for all the variables in the combined datasets
