@@ -10,9 +10,13 @@ Source of original data: https://d396qusza40orc.cloudfront.net/getdata%2Fproject
 
 Input datasets:
 train/X_train.txt with test/X_test.txt -- contain 561 variables that represent 561 features
+
 train/y_train.txt with test/y_test.txt -- contain activity IDs.
+
 train/subject_train.txt with test/subject_test.txt -- contain subject IDs,
+
 features.txt -- contains 561 features
+
 activity_labels.txt -- contains 6 activity IDs and names 
 
 Output dataset: 
